@@ -33,7 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data.SQLite">
-      <HintPath>SQLite3.dll</HintPath>
+      <HintPath>Sqlite3.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -47,6 +47,7 @@
     <Compile Include="BL\Spot\Structure.cs" />
     <Compile Include="BL\Spot\Structure_Type.cs" />
     <Compile Include="BL\Spot\Preparation.cs" />
+    <Compile Include="BL\Spot\Managers\PreparationManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -54,5 +55,7 @@
     <Folder Include="BL\" />
     <Folder Include="BL\Contracts\" />
     <Folder Include="BL\Spot\" />
+    <Folder Include="DAL\" />
+    <Folder Include="BL\Spot\Managers\" />
   </ItemGroup>
 </Project>

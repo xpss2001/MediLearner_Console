@@ -1,6 +1,6 @@
 using System;
 using SQLite;
-using MediLearner_Console.BL;
+using MediLearner_Console.BL.Spot;
 using System.IO;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,11 +39,11 @@ namespace MediLearner_Console.DL
 
 // Two ways of doing this:
 
-				return (from i in me.Table<T>()
-				        where i.ID == id
-				        select i).FirstOrDefault();
+//				return (from i in me.Table<T>()
+//				        where i.ID == id
+//				        select i).FirstOrDefault();
 
-//				return me.Table<T>().FirstOrDefault(x => x.ID == id);
+				return me.Table<T>().FirstOrDefault(x => x.ID == id);
 			}
 		}
 

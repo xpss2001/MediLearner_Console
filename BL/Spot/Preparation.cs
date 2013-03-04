@@ -1,6 +1,6 @@
 using System;
 
-namespace MediLearner_Console.BL
+namespace MediLearner_Console.BL.Spot
 {
 	public class Preparation : Contracts.BusinessEntityBase
 	{
