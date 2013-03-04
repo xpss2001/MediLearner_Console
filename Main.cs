@@ -28,7 +28,7 @@ namespace MediLearner_Console
 			var Markers = db.Table<BL.Marker> ();
 			foreach (BL.Marker ms in Markers)
 			{
-				Console.WriteLine("ID " + ms.ID + ": " + ms.symbol);
+				Console.WriteLine("ID " + ms.ID + ": " + ms.symbol + " DT = " + ms.created.ToString());
 			}
 ////			Console.WriteLine (db.Table<marker> ().Skip(6).FirstOrDefault ().symbol);
 			db.Commit ();

@@ -1,6 +1,5 @@
 using System;
 
-
 namespace MediLearner_Console.BL
 {
 	public class Marker : Contracts.BusinessEntityBase
@@ -10,8 +9,8 @@ namespace MediLearner_Console.BL
 		public int preparation_side { get; set; }
 		public int structure_id { get; set; }
 		public int preparation_side_id { get; set; }
-		public string created { get; set; }
-		public string modified { get; set; }
+		public DateTime created { get; set; }
+		public DateTime modified { get; set; }
 		
 		
 		public override string ToString ()
